@@ -1,0 +1,20 @@
+.boxy{
+     background: white;
+     border: 1px solid black;
+     padding: 20px;
+     height: 400px;
+     background-size: 100% 100%;
+}
+
+.row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 100%;
+}
+
+.wrapper{
+    margin-bottom: 50px;
+    margin-left: 20px
+}
+

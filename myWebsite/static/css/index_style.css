@@ -1,0 +1,31 @@
+/* Django and python course - index website css */
+
+
+header {
+	color: red;
+	background-image:URL('../images/cosmos.jpg');
+	text-align: center;
+	border-color: yellow;
+	border-style: dotted;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: gold;
+    text-align: center;
+}
+
+table {
+    border-color: yellow;
+}
+ .landing{
+    text-align: center;
+ }
+
+ body{
+    padding-top:65px;
+
+ }

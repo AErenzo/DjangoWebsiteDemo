@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'my_website_app/base.html' %}
+
+    {% block title_block %}
+        Home
+    {% endblock %}
+
+    {% block css_block %}
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home_style.css' %}">
+    {% endblock %}
+
+    {% block body_block %}
+        <div class="wrapper">
+             <div class="container-fluid" align="center">
+                <div class="jumbotron">
+                    <header>
+                        <h1><img src="{% static "images/brand.png" %}" width='90px', height='90px'> OOur Mission Statement </h1>
+
+                    </header>
+                </div>
+            </div>
+
+            <br>
+    <!-- Grids -->
+             <div id="Grid" class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-6 boxy" style="background-image: url({% static 'images/misInfo.jpg' %})"></div>
+                     <div class="col-lg-6 boxy" style="background-image: url({% static 'images/fakeNews.jpg' %})"></div>
+                 </div>
+             </div>
+
+             <div id="Grid" class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-3 boxy" style="background-color: white"></div>
+                     <div class="col-lg-3 boxy"></div>
+                     <div class="col-lg-3 boxy"></div>
+                     <div class="col-lg-3 boxy" style="background-color: white"></div>
+                 </div>
+             </div>
+
+             <div id="Grid" class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-12 boxy" style="background-image: url({% static 'images/planet2.jpg' %})"></div>
+                 </div>
+             </div>
+        </div>
+
+
+
+
+    {% endblock %}
+
+    {% block footer_position_block %}
+        position: fixed;
+    {% endblock %}

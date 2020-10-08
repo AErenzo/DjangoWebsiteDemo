@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'my_website_app/base.html' %}
+{% load static %}
+
+    {% block title_block %}
+        Landing
+    {% endblock %}
+
+    {% block body_block %}
+        <div class="jumbotron" align="center">
+            <h1><b>We hope your enjoy our space</b></h1>
+
+           
+            <form action="{% url 'home' %}">
+                <button class="btn btn-primary btn-lg" id="enter_page" type="submit">Click to enter</button>
+            </form>
+        </div>
+    {% endblock %}
+
+    {% block footer_position_block %}
+        position: fixed;
+    {% endblock %}
+
+    {% block style_scripts_block %}
+        <style>
+          body{
+            background-image: URL("{% static 'images/space.jpg' %}");
+            background-repeat: repeat;
+            opacity: 0.8;
+           }
+
+            #navbar{
+              opacity: 1;
+            }
+        </style>
+
+        <script src="{% static 'javascript/colourChange.js' %}"></script>
+    {% endblock %}

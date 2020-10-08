@@ -1,0 +1,13 @@
+body{
+    background-image: URL('../images/space.jpg');
+    background-repeat: repeat;
+    opacity: 0.8;
+}
+
+#jumbotron{
+    padding-top: 40px;
+}
+
+#navbar{
+    opacity: 1;
+}

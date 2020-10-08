@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'my_website_app/base.html' %}
+
+    {% block title_block %}
+        Contact
+    {% endblock %}
+
+    {% block body_block %}
+        <div class="container">
+            <div class="jumbotron">
+
+                {% if submitted %}
+
+                    <h1>Thank you for your enquiry, we have received it.
+                        <br>
+                        <br>
+                        An admin will be in touch sharply!</h1>
+
+                {% else %}
+
+                    <h1 align="center">Need to get in touch?</h1>
+                    <h3 align="center">Please use out form below to submit any inquiries you may have. We aim to respond to all enquiries as soon as possible.</h3>
+                    <br>
+                    <form enctype="multipart/form-data" method="POST" >
+                        {% csrf_token %}
+                        {{form.as_p}}
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    </form>
+
+                {% endif %}
+            </div>
+        </div>
+
+    {% endblock %}

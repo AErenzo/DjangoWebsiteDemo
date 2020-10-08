@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'my_website_app/base.html'%}
+
+    {% block title_block %}
+        Register
+    {% endblock %}
+
+    {% block body_block %}
+        <div class="container">
+            <div class="jumbotron" align="center">
+                {% if registered %}
+                    <h1>Thank you for registering, we hope your enjoy our community!</h1>
+                {% else %}
+                    <h1>Register an Account!</h1>
+                    <h3>Please fill out the form below to register.</h3>
+                    <br>
+                    <form enctype="multipart/form-data" align='left' method="post">
+                        {% csrf_token %}
+                        {{ user_profile_form.as_p }}
+                        {{ user_form.as_p }}
+
+                        <input type="submit" class="btn btn-primary" value="Register">
+                    </form>
+                {% endif %}
+            </div>
+
+             <div class="container" >
+                <p>If you have an account please <a href="{% url 'user_app:login' %}">login</a> here.</p>
+            </div>
+
+
+        </div>
+
+    {% endblock %}
+
+    {% block footer_position_block %}
+        position: relative;
+    {% endblock %}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% extends 'my_website_app/base.html'%}
+
+    {% block title_block %}
+    Discussions
+    {% endblock %}
+
+    {% block body_block %}
+        <div class="container-fluid" align="center">
+            <div class="jumbotron">
+                <header>
+                    <h1>Open Discussion Board</h1>
+                    <br>
+                    <h2><strong>Think. Discuss. Explore.</strong></h2>
+                    <br>
+                    <p>Welcome to the discussion board</p>
+                    <p><em>Our aim is to bring all consciousness together to identify how we can all best move forward as a race</em></p>
+                    <p align="left">Here is the place where you can have your say. Please choose a relative category for your topic
+                        of discussion or add a new one if it doesnt already exist. Leave your thoughts and ideas for the
+                        rest of the world to see and extend on.</p>
+                    <p align="left">You will find a list of topics which we feel cover the majority of the most important topics
+                    surrounding us during this current point in time. Please feel free to add your own topics or even
+                    sub-genre topics.</p>
+                </header>
+            </div>
+        </div>
+
+
+        <h2 style="text-decoration: underline; font-size: 50px; padding-bottom: 20px" align="center">Choose a Topic</h2>
+
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy2" style="background-image: URL('images/tech.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/tech2.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/tech3.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Technology</strong></a> <br><br> Click here for sub-categories</div>
+            </div>
+        </div>
+
+        <div role="separator" class="divider"></div>
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy2" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Science</strong></a> <br><br> Click here for sub-categories</div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/science.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/science2.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/science3.jpg')"></div>
+            </div>
+        </div>
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy2" style="background-image: URL('images/health.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/health2.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/health3.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Health</strong></a> <br><br> Click here for sub-categories</div>
+            </div>
+        </div>
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy2" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Social Constructs</strong></a> <br><br> Click here for sub-categories</div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/social1.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/social2.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/social3.jpg')"></div>
+            </div>
+        </div>
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/enviro3.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/enviro2.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" style="background-image: URL('images/enviro.jpg')"></div>
+                <div class="col-lg-3 col-xs-3 boxy2" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Environment</strong></a> <br><br> Click here for sub-categories</div>
+            </div>
+        </div>
+
+        <div id="dTopic" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 boxy1" align="center" style="font-size: 30px; text-decoration: underline"><br><br><a href="#"><strong>Add New Topic Category</strong></a> <br><br> Click here for sub-categories</div>
+                <div class="col-lg-3 col-xs-3 boxy1" align="center" style="font-size: 30px; text-decoration: underline; background-color: green"></div>
+                <div class="col-lg-3 col-xs-3 boxy1" align="center" style="font-size: 30px; text-decoration: underline; background-color: yellow"></div>
+                <div class="col-lg-3 col-xs-3 boxy2" align="center" style="font-size: 30px; text-decoration: underline; background-color: blue"><strong></strong></div>
+            </div>
+        </div>
+
+    {% endblock %}
+
+    {% block footer_position_block %}
+        position: fixed;
+    {% endblock %}
